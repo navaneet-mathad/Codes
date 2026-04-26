@@ -1,0 +1,7 @@
+class Solution:
+    def findLucky(self, arr: List[int]) -> int:
+        result = -1
+        for i in arr:
+            if arr.count(i) == i:
+                result = max(result,i)
+        return result
