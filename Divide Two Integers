@@ -1,0 +1,4 @@
+class Solution:
+    def divide(self, dividend: int, divisor: int) -> int:
+        res = int(dividend / divisor)
+        return max(-(2**31), min(res, 2**31 - 1))
