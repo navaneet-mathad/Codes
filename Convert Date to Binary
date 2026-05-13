@@ -1,0 +1,9 @@
+class Solution:
+    def convertDateToBinary(self, date: str) -> str:
+        year1 = int(date[0:4])
+        year11 = bin(year1)[2:]
+        month1 = int(date[5:7])
+        month11 = bin(month1)[2:]
+        date1 = int(date[8:])
+        date11 = bin(date1)[2:]
+        return year11+"-"+month11+"-"+date11
