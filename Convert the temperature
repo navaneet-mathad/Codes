@@ -1,0 +1,8 @@
+class Solution:
+    def convertTemperature(self, celsius: float) -> List[float]:
+        list = []
+        kel_tep = celsius+273.15
+        fah_tep = (celsius*1.80)+32.00
+        list.append(kel_tep)
+        list.append(fah_tep)
+        return list
