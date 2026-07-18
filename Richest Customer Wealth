@@ -1,0 +1,5 @@
+import numpy as np
+class Solution:
+    def maximumWealth(self, accounts: List[List[int]]) -> int:
+        s1 = np.sum(accounts,axis=1)
+        return int(s1.max())
