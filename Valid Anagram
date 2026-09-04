@@ -1,0 +1,10 @@
+from collections import Counter    #we import it to count the number of elements
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        if len(s) != len(t):
+            return False
+
+        s_count = Counter(s)   #this counts each element and return in a dictionary.
+        t_count = Counter(t)
+        return s_count == t_count
+
